@@ -12,8 +12,8 @@ class Pessoa {
 }
 
 class Fisica extends Pessoa {
-    constructor(pCpf, pDtNasc){
-        super()
+    constructor(pNome, pEndereco, pCpf, pDtNasc){
+        super(pNome, pEndereco)
         this.cpf = pCpf
         this.dtNasc = pDtNasc
     }
@@ -27,8 +27,8 @@ class Fisica extends Pessoa {
 }
 
 class Juridica extends Pessoa {
-    constructor (pCnpj, pRazao){
-        super()
+    constructor (pNome, pEndereco, pCnpj, pRazao){
+        super(pNome, pEndereco)
         this.cnpj = pCnpj
         this.razao = pRazao
     }
